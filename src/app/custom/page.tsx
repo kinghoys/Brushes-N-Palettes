@@ -13,7 +13,7 @@ export default function CustomOrderPage() {
     artType: '',
     size: '',
     theme: '',
-    colors: [],
+    colors: [] as string[],
     budget: '',
     timeline: '',
     description: '',
