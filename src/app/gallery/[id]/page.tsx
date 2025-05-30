@@ -6,7 +6,8 @@ import { useParams } from 'next/navigation';
 import { FiArrowLeft, FiShoppingCart, FiEye, FiHeart, FiShare2, FiCheck } from 'react-icons/fi';
 
 // Mock data for artwork details (in a real app, this would come from an API or CMS)
-const artworkData = {
+// Adding an index signature to fix TypeScript errors
+const artworkData: { [key: string]: any } = {
   '1': {
     id: 1,
     title: 'Ocean Dreams',
@@ -35,7 +36,7 @@ const artworkData = {
     dimensions: '24" x 36"',
     price: 850,
     images: ['/images/placeholder-2.jpg', '/images/placeholder-2-detail.jpg', '/images/placeholder-2-room.jpg'],
-    description: 'Mountain Sunset captures the magical moment when the day's last light bathes the peaks in golden hues. The rich palette of oranges, purples, and blues creates a dramatic scene that evokes the peace and majesty of nature.',
+    description: "Mountain Sunset captures the magical moment when the day's last light bathes the peaks in golden hues. The rich palette of oranges, purples, and blues creates a dramatic scene that evokes the peace and majesty of nature.",
     yearCreated: 2022,
     available: true,
     details: [
