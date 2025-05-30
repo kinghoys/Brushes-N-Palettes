@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 248, 248, 248;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent text-white px-6 py-3 rounded-md hover:bg-opacity-90 transition-all duration-300;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent border border-accent text-accent px-6 py-3 rounded-md hover:bg-accent hover:text-white transition-all duration-300;
+  }
+
+  .container-custom {
+    @apply container mx-auto px-4 md:px-6 lg:px-8;
+  }
+
+  .heading-xl {
+    @apply font-serif text-4xl md:text-5xl lg:text-6xl font-bold;
+  }
+  
+  .heading-lg {
+    @apply font-serif text-3xl md:text-4xl font-bold;
+  }
+  
+  .heading-md {
+    @apply font-serif text-2xl md:text-3xl font-semibold;
+  }
+  
+  .body-text {
+    @apply font-sans text-base leading-relaxed;
+  }
+}
+
+/* Custom styles for image gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Animation classes */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.slide-up {
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}

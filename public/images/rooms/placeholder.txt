@@ -1,0 +1,15 @@
+For the Art Visualization tool to work properly, you need to add the following room images to this directory:
+
+1. living-room.jpg - A modern living room with empty wall space for artwork
+2. bedroom.jpg - A bedroom setting with wall space above the bed or on side walls
+3. office.jpg - A home office with desk and wall space for art
+4. dining.jpg - A dining room with empty wall space
+
+Recommended image sizes: 1200x800 pixels or larger with 16:9 aspect ratio.
+
+These images should be royalty-free or owned by you to avoid copyright issues.
+
+Good sources for room images:
+- Unsplash.com
+- Pexels.com
+- Your own interior photography
